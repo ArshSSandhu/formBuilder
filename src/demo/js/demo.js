@@ -92,7 +92,7 @@ jQuery(function ($) {
   const inputSets = [
     {
       label: 'User Details',
-      icon: '👨',
+      icon: '📖',
       name: 'user-details', // optional
       showHeader: true, // optional
       fields: [
@@ -127,6 +127,7 @@ jQuery(function ($) {
     },
     {
       label: 'User Agreement',
+      icon: '🤝',
       fields: [
         {
           type: 'header',

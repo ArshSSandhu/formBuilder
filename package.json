@@ -54,7 +54,7 @@
       ]
     },
     "fontServer": "https://fontello.com",
-    "fontelloToken": "09d648f01d6c57cb9f9b8cc55043e0c0"
+    "fontelloToken": "1481cd09cd5582ce009ccee76c7b80d7"
   },
   "babel": {
     "presets": [
@@ -105,7 +105,8 @@
   },
   "dependencies": {
     "jquery": ">=3.4.1",
-    "jquery-ui-sortable": "*"
+    "jquery-ui-sortable": "*",
+    "jscolor": "^0.3.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.22.10",
@@ -133,10 +134,11 @@
     "cross-env": "^7.0.2",
     "css-loader": "^6.8.1",
     "dompurify": "^3.0.6",
-    "eslint": "^7.7.0",
+    "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.34.3",
     "formbuilder-languages": "latest",
     "fs-extra": "^9.0.1",
     "html-webpack-harddisk-plugin": "^2.0.0",

@@ -8,6 +8,11 @@ import controlText from './text'
 import controlTextarea from './textarea'
 import controlTinymce from './textarea.tinymce'
 import controlQuill from './textarea.quill'
+import controlPatientName from '../control_plugins/patientName'
+import controlSliderIntensity from '../control_plugins/intensity.js'
+import controlLocation from '../control_plugins/locationControl.js'
+
+
 
 export default {
   controlAutocomplete,
@@ -20,4 +25,7 @@ export default {
   controlTextarea,
   controlTinymce,
   controlQuill,
+  controlPatientName,
+  controlSliderIntensity,
+  controlLocation
 }
