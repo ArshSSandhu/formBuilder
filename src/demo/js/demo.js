@@ -91,14 +91,63 @@ jQuery(function ($) {
 
   const inputSets = [
     {
-      label: 'User Details',
-      icon: '📖',
+      label:'Personal Info',
+      icon:'🤷‍♂️',
+      showHeader: true,
+      fields:[
+        {
+          type: 'text',
+          label: 'Age',
+          className: 'form-control',
+        },
+        {
+          type: 'text',
+          label: 'Date of Birth (MM/DD/YYYY)',
+          className: 'form-control',
+        },
+        {
+          type: 'select',
+          label: 'Gender',
+          className: 'form-control',
+          values:[
+            {
+              label: 'Male',
+              value: 'option-2',
+              selected: false,
+            },
+            {
+              label: 'Female',
+              value: 'option-2',
+              selected: false,
+            },
+            {
+              label: 'Other',
+              value: 'option-2',
+              selected: false,
+            },
+          ]
+        },
+        {
+          type: 'text',
+          label: 'Phone',
+          className: 'form-control',
+        },
+        {
+          type: 'text',
+          label: 'Email',
+          className: 'form-control',
+        }
+      ]
+    },
+    {
+      label: 'Profession and Employment',
+      icon: '🏢',
       name: 'user-details', // optional
       showHeader: true, // optional
       fields: [
         {
           type: 'text',
-          label: 'First Name',
+          label: 'Employer/Company name',
           className: 'form-control',
         },
         {
@@ -107,21 +156,69 @@ jQuery(function ($) {
           className: 'form-control',
           values: [
             {
-              label: 'Street Sweeper',
+              label: 'Doctor',
               value: 'option-2',
               selected: false,
             },
             {
-              label: 'Brain Surgeon',
+              label: 'Nurse',
               value: 'option-3',
               selected: false,
             },
+            {
+              label: 'Lawyer',
+              value: 'option-4',
+              selected: false,
+            },
+            {
+              label: 'Teacher',
+              value: 'option-5',
+              selected: false,
+            },
+            {
+              label: 'Engineer',
+              value: 'option-6',
+              selected: false,
+            },
+            {
+              label: 'Artist',
+              value: 'option-7',
+              selected: false,
+            },
+            {
+              label: 'Accountant',
+              value: 'option-8',
+              selected: false,
+            },
+            {
+              label: 'Government Official',
+              value: 'option-9',
+              selected: false,
+            },
+            {
+              label: 'Salesperson',
+              value: 'option-10',
+              selected: false,
+            },
+            {
+              label: 'Scientist',
+              value: 'option-11',
+              selected: false,
+            }
+
           ],
         },
         {
           type: 'textarea',
-          label: 'Short Bio:',
+          label: 'Work Address',
           className: 'form-control',
+          placeholder: 'street/ country / state / city / zipcode'
+        },
+        {
+          type: 'textarea',
+          label: 'Work Phone',
+          className: 'form-control',
+          placeholder: '+1(XXX) XXX XXXX'
         },
       ],
     },
@@ -151,6 +248,98 @@ jQuery(function ($) {
         },
       ],
     },
+    {
+      label:'Insurance Info',
+      icon:'🪪',
+      showHeader: true,
+      fields:[
+        {
+          type: 'text',
+          label: 'Insurance Provider',
+          className: 'form-control',
+        },
+        {
+          type: 'text',
+          label: 'Policy Number',
+          className: 'form-control',
+        },
+        {
+          type: 'text',
+          label: 'Group Number',
+          className: 'form-control',
+        },
+        {
+          type: 'text',
+          label: 'Subscriber Name (if different)',
+          className: 'form-control',
+        },
+        {
+          type: 'text',
+          label: 'Insurance Phone Number',
+          className: 'form-control',
+        },
+
+      ]
+    },
+    {
+      label:'Emergency Contact',
+      icon:'🚨',
+      showHeader: true,
+      fields:[
+        {
+          type: 'text',
+          label: 'Name',
+          className: 'form-control',
+        },
+        {
+          type: 'select',
+          label: 'Relationship to Patient',
+          className: 'form-control',
+          values: [{
+            label: 'Parent',
+            value: 'option-2',
+            selected: false,
+          },
+          {
+            label: 'GrandParent',
+            value: 'option-3',
+            selected: false,
+          },
+          {
+            label: 'Friend',
+            value: 'option-4',
+            selected: false,
+          },
+          {
+            label: 'Relative',
+            value: 'option-5',
+            selected: false,
+          },
+          {
+            label: 'Co-Worker',
+            value: 'option-6',
+            selected: false,
+          },
+          {
+            label: 'Family Doctor',
+            value: 'option-7',
+            selected: false,
+          },],
+        },
+        {
+          type: 'text',
+          label: 'Phone',
+          className: 'form-control',
+        },
+        {
+          type: 'text',
+          label: 'Address',
+          className: 'form-control',
+        },
+
+      ]
+    }
+    
   ]
 
   const typeUserDisabledAttrs = {
