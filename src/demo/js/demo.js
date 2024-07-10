@@ -140,6 +140,17 @@ jQuery(function ($) {
       ]
     },
     {
+      label:'Patient ID',
+      icon:'🚀',
+      showHeader: true,
+      fields:[
+        {
+          type: 'text',
+          label: 'Assign the unique 10 digit Patient ID',
+          className: 'form-control',
+        }]
+    },
+    {
       label: 'Profession and Employment',
       icon: '🏢',
       name: 'user-details', // optional
