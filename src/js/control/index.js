@@ -10,7 +10,6 @@ import controlTinymce from './textarea.tinymce'
 import controlQuill from './textarea.quill'
 import controlPatientName from '../control_plugins/patientName'
 import controlSliderIntensity from '../control_plugins/intensity.js'
-import controlLocation from '../control_plugins/locationControl.js'
 
 
 
@@ -26,6 +25,5 @@ export default {
   controlTinymce,
   controlQuill,
   controlPatientName,
-  controlSliderIntensity,
-  controlLocation
+  controlSliderIntensity
 }

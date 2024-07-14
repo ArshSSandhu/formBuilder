@@ -91,6 +91,38 @@ jQuery(function ($) {
 
   const inputSets = [
     {
+      label:'Patient Address',
+      icon:'📍',
+      showHeader: true,
+      fields:[
+        {
+          type: 'text',
+          label: 'Street',
+          className: 'form-control',
+        },
+        {
+          type: 'text',
+          label: 'Country',
+          className: 'form-control',
+        },
+        {
+          type: 'text',
+          label: 'State',
+          className: 'form-control',
+        },
+        {
+          type: 'text',
+          label: 'City',
+          className: 'form-control',
+        },
+        {
+          type: 'text',
+          label: 'Zip Code',
+          className: 'form-control',
+        }
+      ]
+    },
+    {
       label:'Personal Info',
       icon:'🤷‍♂️',
       showHeader: true,
